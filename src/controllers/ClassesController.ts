@@ -20,7 +20,7 @@ interface Classes {
   schedules: string;
 }
 
-export default class CreateClasses {
+export default class ClassesController {
   async index(req: Request, res: Response) {
     const filters = req.query;
 
