@@ -60,6 +60,10 @@ export default class ClassesController {
           ),
         ]);
 
+      if (!classes[0].id) {
+        return res.json(null);
+      }
+
       let classesWithSchedules = classes.map((classItem) => {
         return {
           ...classItem,
